@@ -1,5 +1,9 @@
-var message = "Hello World!"
+var message = "Hello World!";
 
-alert(message)
-console.log(message)
-document.write(message)
+function square(num){
+	return num*num;
+}
+
+alert(square(3));
+console.log(square(4));
+document.write(square(5));
