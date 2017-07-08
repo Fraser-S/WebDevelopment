@@ -4,6 +4,26 @@ function square(num){
 	return num*num;
 }
 
-alert(square(3));
-console.log(square(4));
-document.write(square(5));
+function sum(num1, num2, num3){
+	return num1+num2+num3;
+}
+
+var person = {
+	name:"Fraser",
+	age:22,
+	occupation:"Software Developer"
+	}
+
+function displayPerson(){
+	return person.name+", " + person.age + ", " + person.occupation;
+}
+
+alert(displayPerson());
+console.log(displayPerson());
+document.write(displayPerson());
+
+person.age++;
+
+alert(displayPerson());
+console.log(displayPerson());
+document.write(displayPerson());
