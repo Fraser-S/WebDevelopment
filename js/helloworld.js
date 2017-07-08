@@ -18,12 +18,12 @@ function displayPerson(){
 	return person.name+", " + person.age + ", " + person.occupation;
 }
 
+function incrementAge(){
+	person.age++;
+	alert(displayPerson());
+}
+
 alert(displayPerson());
 console.log(displayPerson());
 document.write(displayPerson());
 
-person.age++;
-
-alert(displayPerson());
-console.log(displayPerson());
-document.write(displayPerson());
