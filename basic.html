@@ -7,7 +7,14 @@
 	<body>
 		<script type="text/javascript" src="js/helloworld.js" ></script>
 		<form>
-			<input type="button" onclick="incrementAge()" value="Increase Age"/>
+			Name:
+			<input type="text" name="fname" /><br>
+			Age:
+			<input type="number" name="age" /><br>
+			Occupation:
+			<input type="text" name="occupation"/><br>
+			<input type="button" onclick="createPerson(fname.value, age.value, occupation.value)" value="create person"/><br>
+			<input type="button" onclick="editPerson(fname.value, age.value, occupation.value)" value="edit person"/><br>
 		</form>
 	</body>
 </html>

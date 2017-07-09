@@ -1,29 +1,27 @@
-var message = "Hello World!";
-
-function square(num){
-	return num*num;
-}
-
-function sum(num1, num2, num3){
-	return num1+num2+num3;
-}
-
-var person = {
-	name:"Fraser",
-	age:22,
-	occupation:"Software Developer"
-	}
+var person = {name:"a", age:0,occupation:"a"}
 
 function displayPerson(){
-	return person.name+", " + person.age + ", " + person.occupation;
+	return person.name + ", " + person.age + ", " + person.occupation;
 }
 
-function incrementAge(){
-	person.age++;
-	alert(displayPerson());
+function createPerson(name, age, occupation){
+	if(name.text =="" || age < 0 || occupation.text == ""){
+		alert("Invalid Inputs");
+	} else {
+		person.name = name.text;
+		person.age = age;
+		person.occupation=occupation.text;
+		alert(displayPerson());
+	}
 }
 
-alert(displayPerson());
-console.log(displayPerson());
-document.write(displayPerson());
-
+function editPerson(name, age, occupation){
+	if(name != person.name && name != "")
+		person.name= name;
+	if(age != person.age)
+		person.age = age;
+	if(occupation != person.occupation && occupation != "")
+		person.occupation=occupation;
+	var personDetails = displayPerson();
+	alert("Updated person " + personDetails);
+}
